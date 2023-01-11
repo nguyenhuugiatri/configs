@@ -85,13 +85,6 @@
     "foreground": "#E6E6E6",
     "errorForeground": "#FF4B82",
 
-    // * ACTIVITY BAR
-    "activityBar.background": "#222223",
-    "activityBar.foreground": "#E6E6E6",
-    "activityBar.border": "#222223",
-    "activityBarBadge.background": "#19f9d8",
-    "activityBarBadge.foreground": "#242526",
-
     // * BADGE
     "badge.background": "#6FC1FF",
     "badge.foreground": "#242526",
@@ -164,15 +157,17 @@
     "list.inactiveSelectionForeground": "#19f9d8",
     "list.highlightForeground": "#6FC1FF",
 
+    // * ACTIVITY BAR
+    "activityBar.background": "#222223",
+    "activityBar.foreground": "#E6E6E6",
+    "activityBar.border": "#222223",
+    "activityBarBadge.background": "#19f9d8",
+    "activityBarBadge.foreground": "#242526",
+
     // * SIDE BAR
     "sideBar.background": "#242526",
     "sideBar.foreground": "#BBBBBB",
     "sideBar.border": "#222223",
-
-    "scrollbar.shadow": "#222223",
-    "scrollbarSlider.background": "#373B4199",
-    "scrollbarSlider.activeBackground": "#757575",
-    "scrollbarSlider.hoverBackground": "#757575",
 
     // * STATUS BAR
     "statusBar.background": "#222223",
@@ -181,6 +176,11 @@
     "statusBar.noFolderForeground": "#E6E6E6",
     "statusBar.debuggingBackground": "#B084EB",
     "statusBar.debuggingForeground": "#E6E6E6",
+
+    "scrollbar.shadow": "#222223",
+    "scrollbarSlider.background": "#373B4199",
+    "scrollbarSlider.activeBackground": "#757575",
+    "scrollbarSlider.hoverBackground": "#757575",
 
     // * TITLE BAR
     "titleBar.activeBackground": "#242526",
@@ -215,7 +215,7 @@
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.organizeImports": true
+    "source.organizeImports": false
   },
 
   "eslint.validate": ["javascript", "typescriptreact", "javascriptreact"],
@@ -375,42 +375,25 @@
 
   // * TABNINE
   "tabnine.experimentalAutoImports": true,
+
+  // * PEACOCK
+
   "peacock.favoriteColors": [
     {
-      "name": "Angular Red",
-      "value": "#dd0531"
+      "name": "Mochi Blue",
+      "value": "#16274D"
     },
     {
-      "name": "Azure Blue",
-      "value": "#007fff"
+      "name": "Mochi Green",
+      "value": "#0A3523"
     },
     {
-      "name": "JavaScript Yellow",
-      "value": "#f9e64f"
+      "name": "Mochi Red",
+      "value": "#51141F"
     },
     {
-      "name": "Mandalorian Blue",
-      "value": "#1857a4"
-    },
-    {
-      "name": "Node Green",
-      "value": "#215732"
-    },
-    {
-      "name": "React Blue",
-      "value": "#61dafb"
-    },
-    {
-      "name": "Something Different",
-      "value": "#832561"
-    },
-    {
-      "name": "Svelte Orange",
-      "value": "#ff3d00"
-    },
-    {
-      "name": "Vue Green",
-      "value": "#42b883"
+      "name": "Mochi Yellow",
+      "value": "#4B2D10"
     }
   ]
 }
