@@ -1,15 +1,25 @@
 {
   /* -------------------------------------------- */
-  /*                    COMMON                    */
+  /*                    EDITOR                    */
   /* -------------------------------------------- */
+  // * COMMON
+  "update.mode": "start",
+  "editor.accessibilitySupport": "off",
+  "editor.semanticHighlighting.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.wordWrap": "on",
+  "editor.detectIndentation": false,
+  "editor.smoothScrolling": true,
+  "editor.scrollBeyondLastLine": false,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+
   // * TEXTS
   "editor.tabSize": 2,
   "editor.fontWeight": 550,
   "editor.lineHeight": 22,
-  "editor.codeLens": false,
   "editor.fontFamily": "FiraCode-Retina",
-  "editor.fontLigatures": true,
   "editor.fontSize": 14.5,
+  "editor.fontLigatures": true,
 
   // * EXPLORER
   "explorer.compactFolders": false,
@@ -18,17 +28,14 @@
   "explorer.confirmDelete": false,
   "explorer.autoReveal": true,
 
-  // * SCROLLING
-  "editor.smoothScrolling": true,
-  "editor.scrollBeyondLastLine": false,
-
-  // * INDENTATION
-  "editor.wordWrap": "on",
-  "editor.detectIndentation": false,
+  // * CURSOR
+  "editor.cursorBlinking": "smooth",
 
   // * MINIMAP
   "editor.minimap.renderCharacters": false,
-  "editor.minimap.maxColumn": 100,
+  "editor.minimap.maxColumn": 60,
+  "editor.minimap.scale": 2,
+  "editor.minimap.showSlider": "always",
 
   // * BRACKET PAIR
   "editor.bracketPairColorization.enabled": true,
@@ -46,14 +53,6 @@
     "strings": true
   },
 
-  // * OTHERS
-  "update.mode": "start",
-  "extensions.ignoreRecommendations": true,
-  "security.workspace.trust.untrustedFiles": "newWindow",
-  "editor.renderLineHighlight": "gutter",
-  "editor.accessibilitySupport": "off",
-  "editor.semanticHighlighting.enabled": false,
-
   /* -------------------------------------------- */
   /*                   TERMINAL                   */
   /* -------------------------------------------- */
@@ -67,13 +66,14 @@
   /* -------------------------------------------- */
   /*                     THEME                    */
   /* -------------------------------------------- */
+  "workbench.editor.labelFormat": "short",
+
+  // * SCROLLBAR
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
 
   // * ICONS
   "workbench.iconTheme": "vscode-icons",
-  "workbench.editor.labelFormat": "short",
-
-  // * CURSOR
-  "editor.cursorBlinking": "smooth",
 
   // * COLORS
   "workbench.colorCustomizations": {
@@ -84,8 +84,6 @@
     "activityBar.background": "#222223",
     "activityBar.foreground": "#E6E6E6",
     "activityBar.border": "#222223",
-
-    // * ACTIVITY BAR BADGE
     "activityBarBadge.background": "#19f9d8",
     "activityBarBadge.foreground": "#242526",
 
@@ -96,7 +94,7 @@
     // * PROGRESS BAR
     "progressBar.background": "#B084EB",
 
-    // * BUTTON
+    // * BUTTONS
     "button.background": "#45A9F9",
     "button.foreground": "#FFFFFF",
     "button.hoverBackground": "#676B79",
@@ -106,12 +104,12 @@
 
     // * GIT MERGE
     "gitDecoration.ignoredResourceForeground": "#757575",
+    "diffEditor.insertedTextBackground": "#19f9d741",
+    "diffEditor.removedTextBackground": "#FF4B8241",
     "merge.currentHeaderBackground": "#B084EB90",
     "merge.currentContentBackground": "#B084EB40",
     "merge.incomingHeaderBackground": "#45A9F990",
     "merge.incomingContentBackground": "#FFB86C40",
-    "diffEditor.insertedTextBackground": "#19f9d741",
-    "diffEditor.removedTextBackground": "#FF4B8241",
 
     // * EDITOR
     "editor.background": "#242424",
@@ -124,11 +122,11 @@
 
     "editor.selectionBackground": "#FFB86C40",
     "editor.inactiveSelectionBackground": "#FFB86C40",
-    "editor.selectionHighlightBackground": "#ffb86c20",
-    "editor.wordHighlightBackground": "#FFCC9560",
-    "editor.wordHighlightStrongBackground": "#FF9AC170",
-    "editor.findMatchBackground": "#B084EB90",
-    "editor.findMatchHighlightBackground": "#FFB86C40",
+    "editor.selectionHighlightBackground": "#6FC1FF50",
+    "editor.wordHighlightBackground": "#00000000",
+    "editor.wordHighlightStrongBackground": "#00000000",
+    "editor.findMatchBackground": "#ffe92390",
+    "editor.findMatchHighlightBackground": "#5416ff90",
 
     "editor.lineHighlightBackground": "#31353a",
     "editorWidget.background": "#2a2c2d",
@@ -196,6 +194,7 @@
   /* -------------------------------------------- */
   /*                      GIT                     */
   /* -------------------------------------------- */
+  "editor.codeLens": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.defaultDateShortFormat": null,
@@ -287,18 +286,20 @@
     "**/.hg": true
   },
 
-  /* ------------------ -------------------------------------- ----------------- */
-
   /* -------------------------------------------- */
   /*                  EXTENSIONS                  */
   /* -------------------------------------------- */
+  "extensions.ignoreRecommendations": true,
+
+  // * PRETTIER
+  "prettier.singleQuote": true,
 
   // * INDENTICATOR
   "indenticator.showCurrentDepthInStatusBar": false,
   "indenticator.inner.style": "none",
   "indenticator.style": "solid",
   "indenticator.color.dark": "#19f9d8",
-  "indenticator.width": 0.7,
+  "indenticator.width": 1,
   "indenticator.inner.width": 1,
 
   // * MATCHING TAG
@@ -306,7 +307,7 @@
     "opening": {
       "name": {
         "custom": {
-          "borderWidth": "0 0 1px 0",
+          "borderWidth": "2px",
           "borderColor": "#19f9d8",
           "borderStyle": "solid",
           "borderRadius": "4px",
@@ -319,19 +320,9 @@
   // * COMMENT DIVIDER
   "comment-divider.length": 50,
 
-  // * PYTHON
-  "python.languageServer": "Pylance",
-  "python.showStartPage": false,
-
-  // * SYNC SETTINGS
-  "sync.gist": "d36f7f0d07dce7dffdc37b7f7d38753e",
-
   // * HTMLTAGWRAP
   "htmltagwrap.tag": "div",
   "htmltagwrap.autoDeselectClosingTag": true,
-
-  // * PRETTIER
-  "prettier.singleQuote": true,
 
   // * SPELL CHECKER
   "cSpell.language": "en",
@@ -376,5 +367,7 @@
     "unmark",
     "upsert"
   ],
+
+  // * TABNINE
   "tabnine.experimentalAutoImports": true
 }
