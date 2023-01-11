@@ -1,4 +1,3 @@
-// Empty
 [
   {
     "key": "cmd+1",
@@ -107,5 +106,10 @@
   {
     "key": "cmd+q",
     "command": "-workbench.action.quit"
+  },
+  {
+    "key": "ctrl+shift+escape",
+    "command": "workbench.action.closeFolder",
+    "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
   }
 ]
