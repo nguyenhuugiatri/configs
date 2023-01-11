@@ -3,11 +3,14 @@
   /*                    EDITOR                    */
   /* -------------------------------------------- */
   // * COMMON
+  "window.title": "${rootName}${separator}${rootPath}",
   "update.mode": "start",
   "editor.accessibilitySupport": "off",
   "editor.semanticHighlighting.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "editor.wordWrap": "on",
+  "editor.linkedEditing": true,
+  "editor.insertSpaces": true,
   "editor.detectIndentation": false,
   "editor.smoothScrolling": true,
   "editor.scrollBeyondLastLine": false,
@@ -30,6 +33,7 @@
 
   // * CURSOR
   "editor.cursorBlinking": "smooth",
+  "editor.cursorWidth": 3,
 
   // * MINIMAP
   "editor.minimap.renderCharacters": false,
@@ -38,8 +42,9 @@
   "editor.minimap.showSlider": "always",
 
   // * BRACKET PAIR
-  "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairsHorizontal": true,
 
   // * SUGGESTIONS
   "editor.acceptSuggestionOnEnter": "off",
@@ -369,5 +374,43 @@
   ],
 
   // * TABNINE
-  "tabnine.experimentalAutoImports": true
+  "tabnine.experimentalAutoImports": true,
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#dd0531"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#61dafb"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Svelte Orange",
+      "value": "#ff3d00"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ]
 }
