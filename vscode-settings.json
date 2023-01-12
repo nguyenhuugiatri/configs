@@ -14,7 +14,9 @@
   "editor.detectIndentation": false,
   "editor.smoothScrolling": true,
   "editor.scrollBeyondLastLine": false,
+  "editor.formatOnPaste": false,
   "security.workspace.trust.untrustedFiles": "newWindow",
+  "workbench.editor.enablePreview": false,
 
   // * TEXTS
   "editor.tabSize": 2,
@@ -299,14 +301,6 @@
   // * PRETTIER
   "prettier.singleQuote": true,
 
-  // * INDENTICATOR
-  "indenticator.showCurrentDepthInStatusBar": false,
-  "indenticator.inner.style": "none",
-  "indenticator.style": "solid",
-  "indenticator.color.dark": "#19f9d8",
-  "indenticator.width": 1,
-  "indenticator.inner.width": 1,
-
   // * MATCHING TAG
   "highlight-matching-tag.styles": {
     "opening": {
@@ -377,23 +371,38 @@
   "tabnine.experimentalAutoImports": true,
 
   // * PEACOCK
-
+  "peacock.keepBadgeColor": true,
+  "peacock.keepForegroundColor": true,
   "peacock.favoriteColors": [
     {
       "name": "Mochi Blue",
-      "value": "#16274D"
+      "value": "#111A2F"
     },
     {
       "name": "Mochi Green",
-      "value": "#0A3523"
+      "value": "#0D2018"
     },
     {
       "name": "Mochi Red",
-      "value": "#51141F"
+      "value": "#2D1419"
     },
     {
       "name": "Mochi Yellow",
-      "value": "#4B2D10"
+      "value": "#2C1F13"
+    },
+    {
+      "name": "Dango Purple",
+      "value": "#1D0A3C"
     }
-  ]
+  ],
+
+  // * PACKAGE JSON UPGRADE
+  "package-json-upgrade.decorationString": "%s",
+  "package-json-upgrade.majorUpgradeColorOverwrite": "#757575",
+  "package-json-upgrade.minorUpgradeColorOverwrite": "#757575",
+  "package-json-upgrade.patchUpgradeColorOverwrite": "#757575",
+  "package-json-upgrade.prereleaseUpgradeColorOverwrite": "#757575",
+
+  // * ERROR LENS
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"]
 }
